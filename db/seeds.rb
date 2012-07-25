@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Beat.create(creator: 'Carnage', length: '3:54', title: 'Roughhouse')
+Beat.create(creator: 'Frosty Tankard', length: '19:43', title: 'Hamburger')
+Beat.create(creator: '7% Ophelia', length: '1:42', title: 'Bored, What you want to do, Hammie?')

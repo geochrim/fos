@@ -202,14 +202,21 @@
 
     <p><a href="/articles/javascript-tabs/">Return to the JavaScript Tabs article</a></p>
 
-<div>
+<div id = "beats_list">
   
-<% @beats.each do |beat| %>
- <p> 
- <%= beat.title.to_s %>
- <p>
- <%= beat.length.to_s  %>
- <p>
+<table>
+<tr><th>Title</th>
+    <th>Length</th>
+    <th>Creator</th>
+    <th>Download <p>(Low Res Free)</th>
+    <th>Download <p>(Hi Res Free)</th>
+ </tr>   
+    <% @beats.each do |beat| %>
+ <tr>
+ <td><%= beat.title.to_s %>
+ <td><%= beat.length.to_s  %>
+ <td><%= beat.creator.to_s %>
+ </tr>
  <% end  %>
 
 </div> 
