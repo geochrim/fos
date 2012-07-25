@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @beat.title %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @beat.length %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @beat.creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_beat_path(@beat) %> |
+<%= link_to 'Back', beats_path %>

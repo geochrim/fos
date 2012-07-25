@@ -1,0 +1,29 @@
+<%= form_for(@beat) do |f| %>
+  <% if @beat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@beat.errors.count, "error") %> prohibited this beat from being saved:</h2>
+
+      <ul>
+      <% @beat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :creator %><br />
+    <%= f.text_field :creator %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

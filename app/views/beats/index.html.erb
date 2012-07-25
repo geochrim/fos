@@ -1,0 +1,27 @@
+<h1>Listing beats</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Length</th>
+    <th>Creator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @beats.each do |beat| %>
+  <tr>
+    <td><%= beat.title %></td>
+    <td><%= beat.length %></td>
+    <td><%= beat.creator %></td>
+    <td><%= link_to 'Show', beat %></td>
+    <td><%= link_to 'Edit', edit_beat_path(beat) %></td>
+    <td><%= link_to 'Destroy', beat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Beat', new_beat_path %>
