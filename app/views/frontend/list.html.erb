@@ -99,42 +99,28 @@
       <li><a href="#usage">Bass</a></li>
     </ul>
 
-    <div class="tabContent" id="about">
-      <h2>Beats</h2>
-      
-      <div>
-        <table>
-          <tr><th>Listen</th>
-          		<th>Title</th>
-          		<th>Length</th>
-          		<th>Creator</th>
-          		<th>Download <p> (Low Res Free)</th>
-          		<th>Download <p> (Hi Res Pay)</th>
-          		
-          		
-          </tr>
-          <tr><td> <img src="audio-headset (4).png" height=10px width=10px;>
-              <td> A Beat Too Far
-              <td> 3:42
-              <td> Maximus
-              <td> <img src="download-3 (2).png" height=10px width=10px;>
-              <td> <img src="download-3 (2).png" height=10px width=10px;>
-
-          </tr>
-          <tr>
-          <tr><td> <img src="audio-headset (4).png" height=10px width=10px;>
-          	  <td> One Nice Beat
-              <td> 0:35
-              <td> Salto
-              <td> <img src="download-3 (2).png" height=10px width=10px;>
-              <td> <img src="download-3 (2).png" height=10px width=10px;>
-              
-          </tr>
-        </table>
+ <div class="tabContent" id="about">
+   <h2>Beats</h2>
+   <div>
+     <table>
+<tr><th>Title</th>
+    <th>Length</th>
+    <th>Creator</th>
+    <th>Download <p>(Low Res Free)</th>
+    <th>Download <p>(Hi Res Free)</th>
+ </tr>   
+    <% @beats.each do |beat| %>
+ <tr>
+ <td><%= beat.title.to_s %>
+ <td><%= beat.length.to_s  %>
+ <td><%= beat.creator.to_s %>
+ </tr>
+ <% end  %>
+  </table>
+</div> 
       </div>
     
-    </div>
-
+ 
     <div class="tabContent" id="advantages">
       <h2>Guitar</h2>
       <div>
@@ -175,11 +161,6 @@
           		<th>Creator</th>
           		<th>Download Low Res Free</th>
           		<th>Download Hi Res (Pay)</th>
-          		
-
-
-
-          		
           </tr>
           <tr><td> <img src="audio-headset (4).png" height=10px width=10px;>
               <td> A Bass Too Far
@@ -200,26 +181,6 @@
       </div>
     </div>
 
-    <p><a href="/articles/javascript-tabs/">Return to the JavaScript Tabs article</a></p>
-
-<div id = "beats_list">
-  
-<table>
-<tr><th>Title</th>
-    <th>Length</th>
-    <th>Creator</th>
-    <th>Download <p>(Low Res Free)</th>
-    <th>Download <p>(Hi Res Free)</th>
- </tr>   
-    <% @beats.each do |beat| %>
- <tr>
- <td><%= beat.title.to_s %>
- <td><%= beat.length.to_s  %>
- <td><%= beat.creator.to_s %>
- </tr>
- <% end  %>
-
-</div> 
-
+ 
   </body>
 </html>
