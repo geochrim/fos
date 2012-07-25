@@ -1,6 +1,23 @@
 I typed this line.
 -p
 
+
+i typed this line.  a few notes. 7.24.12
+- rails app is set up to have a frontend that will list all music files
+- rails app also has a beats model and migration.  future models and migrations for 
+  guitar, vocals, electro, etc ...
+- to do (off the top of my head): 
+	- get the logo images to show up (move from app/assets to public) and correct link syntax
+	- format the front page to dynamically generate a list of current files from the db
+	- shopping cart to buy individual files
+	- user registration (omniauth)
+	- figure out how to get audio files downloading from server and 
+	  figger out where they're stored 'n stuff
+
+- g
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
