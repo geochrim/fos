@@ -94,16 +94,17 @@
     <h1>Riff-bay</h1>
 
     <ul id="tabs">
-      <li><a href="#about">Beats</a></li>
-      <li><a href="#advantages">Guitar</a></li>
-      <li><a href="#usage">Bass</a></li>
+      <li><a href="#beats">Beats</a></li>
+      <li><a href="#guitar">Guitar</a></li>
+      <li><a href="#bass">Bass</a></li>
     </ul>
 
- <div class="tabContent" id="about">
+ <div class="tabContent" id="beats">
    <h2>Beats</h2>
    <div>
      <table>
-<tr><th>Title</th>
+<tr><th>Listen</th>
+	<th>Title</th>
     <th>Length</th>
     <th>Creator</th>
     <th>Download <p>(Low Res Free)</th>
@@ -111,6 +112,7 @@
  </tr>   
     <% @beats.each do |beat| %>
  <tr>
+ <td><img src="audio-headset (4).png" height=10px width=10px;>
  <td><%= beat.title.to_s %>
  <td><%= beat.length.to_s  %>
  <td><%= beat.creator.to_s %>
@@ -121,7 +123,7 @@
       </div>
     
  
-    <div class="tabContent" id="advantages">
+    <div class="tabContent" id="guitar">
       <h2>Guitar</h2>
       <div>
         <table>
@@ -151,7 +153,7 @@
       </div>
     </div>
 
-    <div class="tabContent" id="usage">
+    <div class="tabContent" id="bass">
       <h2>Bass</h2>
      <div>
         <table>
