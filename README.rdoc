@@ -1,5 +1,13 @@
+7.26.12
+- added some seeds to the beats model.  type rake:db seed to seed
+- tweaked the frontend list.html.erb view so it begins to generate a view more dynamically using db data
+- updated readme (obviously)
+
+
 I typed this line.
 -p
+
+
 
 
 i typed this line.  a few notes. 7.24.12
