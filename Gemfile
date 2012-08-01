@@ -6,7 +6,7 @@ gem 'omniauth-identity
 
 # added this file per some stack overflow comment
 # then deleted it since neither server
-# or bundle was working with it
+# or bundle was working with it#
 # gem 'bcrypt-ruby', :require => 'bcrypt'
 
 gem 'rails', '3.2.6'
