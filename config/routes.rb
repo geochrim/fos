@@ -1,4 +1,8 @@
 Lm3::Application.routes.draw do
+  get "users/new"
+
+  resources :users
+
   get "frontend/list"
 
   get "frontend/listen"
